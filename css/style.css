@@ -1,0 +1,209 @@
+body{
+	margin: 0;	
+}
+.clearfix{
+	content: '';
+	display: block;
+	clear: both;
+}
+.wrap{	
+	height: 654px;
+	background: url(../img/f1_1.png) no-repeat;
+	position: relative;
+}
+.cloud .cloud_img1{
+	width: 62px;
+	height: 30px;
+	overflow: hidden;
+	position: absolute;
+	left: 456px;
+	top: 66px;
+	animation: mymove 3s linear 1s infinite alternate;
+	-webkit-animation: mymove 3s linear 1s infinite alternate;
+}
+
+.cloud .cloud_img2{
+	width: 80px;
+	height: 39px;
+	overflow: hidden;
+	position: absolute;
+	right: 207px;
+	top: 139px;
+	animation: mymove1 3s infinite alternate;
+	-webkit-animation: mymove1 3s infinite alternate;
+}
+.cloud .cloud_img3{
+	width: 102px;
+	height: 49px;
+	position: absolute;
+	left: 142px;
+	top: 187px;
+	animation: mymove2 3s infinite alternate;
+	-webkit-animation: mymove2 3s infinite alternate;
+
+}
+.cloud .cloud_img4{
+	width: 202px;
+	height: 200px;
+	overflow: hidden;
+	position: absolute;
+	right: 297px;
+	top: 102px;
+	animation: mymove3 3s linear 3s infinite;
+	-webkit-animation: mymove3 3s linear 3s infinite ;
+	transform-origin: 0 204px;
+}
+.cloud .cloud_img5{
+	width: 131px;
+	height: 169px;
+	overflow: hidden;
+	position: absolute;
+	left: 329px;
+	top: 115px;
+	animation: mymove4 3s infinite alternate;
+	-webkit-animation: mymove4 3s infinite
+	alternate;
+}
+.tourism img{
+	width: 134px;
+	height: 168px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 42px;
+}
+.tourism .tourism_img1{
+	left: 269px;
+	animation: imgmove1 3s infinite;
+	-webkit-animation: imgmove1 3s infinite
+}
+.tourism .tourism_img2{
+	left: 489px;
+	animation: imgmove1 2.8s infinite;
+	-webkit-animation: imgmove1 2.8s infinite;
+}
+.tourism .tourism_img3{
+	left: 712px;
+	animation: imgmove1 2.6s infinite;
+	-webkit-animation: imgmove1 2.6s infinite;
+}
+.tourism .tourism_img4{
+	right: 295px;
+	animation: imgmove1 2.4s infinite;
+	-webkit-animation: imgmove1 2.4s infinite;
+}
+.tourism .tourism_img5{
+	width: 646px;
+	height: 280px;
+	overflow: hidden;
+	position: absolute;
+	left: 343px;
+	top: 168px;
+	animation: mymove5 5s 0.2 ease both;
+	-webkit-animation: mymove5 5s 0.2 ease both;
+}
+/*cloud_img1动画 @keyframes */
+@keyframes mymove{
+	0%{left: 440px;}
+	/*50%{left: 456px;}*/
+	100%{left: 500px;}
+}
+@-webkit-keyframes mymove{
+	0%{left: 440px;}
+	/*50%{left: 500px;}*/
+	100%{left: 500px;}
+}
+/*cloud_img2动画 @keyframes*/
+@keyframes mymove1{
+	0%{right: 176px;}
+	/*50%{right: 220px;}*/
+	100%{right: 210px;}
+}
+@-webkit-keyframes mymove1{
+	0%{right: 176px;}
+	/*50%{right: 220px;}*/
+	100%{right: 210px;}
+}
+/* cloud_img3动画 @keyframes */
+@keyframes mymove2{
+	0%{left: 112px;}
+	/*50%{left: 170px;}*/
+	100%{left: 170px;}
+}
+@-webkit-keyframes mymove2{
+	0%{left: 112px;}
+	/*50%{left: 170px;}*/
+	100%{right: 170px;}
+}
+/* cloud_img4动画 @keyframes */
+@keyframes mymove3{
+	0%{transform:rotate(5deg);}
+	50%{transform:rotate(0deg);}
+	100%{transform:rotate(5deg);}
+}
+@-webkit-keyframes mymove3{
+	0%{transform:rotate(5deg);}
+	50%{transform:rotate(0deg);}
+	100%{transform:rotate(5deg);}
+}
+
+/*cloud_img4动画 @keyframes*/
+@keyframes mymove4{
+	0%{top: 120px;}
+	50%{top: 100px;}
+	100%{top: 120px;}
+}
+@-webkit-keyframes mymove4{
+	0%{top: 120px;}
+	50%{top: 100px;}
+	100%{top: 120px;}
+}
+
+/*tourism_img1动画 @keyframes*/
+@keyframes imgmove1{
+	0%{bottom: 60px;}
+	50%{bottom: 40px;}
+	100%{bottom: 60px;}
+}
+@-webkit-keyframes imgmove1{
+	0%{bottom: 60px;}
+	50%{bottom: 40px;}
+	100%{bottom: 60px;}
+}
+
+/*tourism_img5动画 @keyframes*/
+@keyframes mymove5{
+	0%{opacity: 0;
+		transform:scale(0.3);
+		-webkit-transform:scale(0.3);
+	}
+	50%{opacity: 1;
+		transform:scale(1.04);
+		-webkit-transform:scale(1.04);
+	}
+	70%{opacity: 1;
+		transform:scale(0.9);
+		-webkit-transform:scale(0.9);
+	}
+	100%{opacity: 0;
+		transform:scale(1);
+		-webkit-transform:scale(1);
+	}
+}
+@-webkit-keyframes mymove5{
+	0%{opacity: 0;
+		transform:scale(0.3);
+		-webkit-transform:scale(0.3);
+	}
+	50%{opacity: 1;
+		transform:scale(1.04);
+		-webkit-transform:scale(1.04);
+	}
+	70%{opacity: 1;
+		transform:scale(0.9);
+		-webkit-transform:scale(0.9);
+	}
+	100%{opacity: 0;
+		transform:scale(1);
+		-webkit-transform:scale(1);
+	}
+}
